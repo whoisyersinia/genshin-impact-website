@@ -202,21 +202,21 @@ header{
 
 /* Landing Page */
 
-button{
+.bg-text button{
   margin-left: 7px;
   color: #fbfcfd;
   padding: 10px 25px;
-  background: transparent;
-  border: 1px solid #fff;
+  background: #c21944;
+  border: 1px solid #000;
   border-radius: 20px;
   outline: none;
   cursor: pointer;
 }
 
-button:hover{
-  background-color: #fbfcfd;
-  color: black;
-  border-color: black;
+.bg-text button:hover{
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
   left: 10vh;
 }
 
@@ -252,7 +252,7 @@ header a:link, a:visited, a:hover, a:active {
   color: #dfdeff;
   margin-left: 6px;
   display: flex;
-
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
 }
 
 .bg-text h1{
@@ -262,7 +262,7 @@ header a:link, a:visited, a:hover, a:active {
   font-weight: 600;
   display: flex;
   color: #fff;
-
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
 }
 
 .main{
