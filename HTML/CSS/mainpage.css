@@ -388,8 +388,14 @@ section{
   z-index: -1;
   overflow: hidden;
 }
+
+.showcase{
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+}
 .showcase h2{
-  position: relative;
   color: #fff;
   font-size: 3.5em;
   font-weight: 700;
@@ -403,19 +409,23 @@ section{
   margin-left: 5%;
 }
 
-.ayakaheading{
-  font-family: 700;
+.abilities{
   position: absolute;
+  font-weight: 700;
   margin-left: 5%;
   bottom: 9%;
-  margin-bottom: 5%;
+
 }
 
-.ayakaheading:last-child{
-  bottom: 48%;
+.ayakaheading{
+  position: absolute;
+  font-weight: 700;
+  margin-left: 5%;
+  bottom: 65%;
+  margin-bottom: 1%;
 }
+
 .showcase h4{
-  position: relative;
   color: #2cbcc9;
   font-family: 'HYWenHei-85W';
   font-size: 1em;
@@ -438,10 +448,10 @@ section{
 .ayaka{
   display: flex;
   width: 50%;
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  z-index: 0;
   left: 68%;
-  top: 10%;
+  top: 50%;
   cursor: pointer;
 }
 
@@ -456,6 +466,15 @@ section{
   letter-spacing: 1.6px; 
 }
 
+.normalattackicon{
+  display: block;
+  position: relative;
+  width: 5vw;
+  height: 13vh;
+  padding: 0;
+  margin: 0;
+  top: 10%;
+}
 
 .spacer{
   aspect-ratio: 960 / 540;
