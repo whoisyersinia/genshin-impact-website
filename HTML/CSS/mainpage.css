@@ -358,9 +358,7 @@ section{
 
 .imgBx{
   grid-area: image;
-  top: 0;
-  left: 0;
-  background: url("/HTML/images/1.jpg") center;
+  background: url("/images/1.jpg") center;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -505,7 +503,7 @@ section{
 }
 
 .layer1{
-  background-image: url("/HTML/svg/waves.svg");
+  background-image: url("/svg/waves.svg");
 }
 
 /*3rd section */
