@@ -394,7 +394,9 @@ section{
   position: absolute;
   overflow: hidden;
   height: 100%;
+  z-index: -1;
 }
+
 .showcase h2{
   color: #fff;
   font-size: 3.5em;
@@ -413,7 +415,7 @@ section{
   position: absolute;
   font-weight: 700;
   margin-left: 5%;
-  bottom: 9%;
+  bottom: 50%;
 
 }
 
@@ -429,7 +431,7 @@ section{
   color: #2cbcc9;
   font-family: 'HYWenHei-85W';
   font-size: 1em;
-  z-index: 1;
+  z-index: 0;
 }
 
 .cryoshowcase{
@@ -466,14 +468,31 @@ section{
   letter-spacing: 1.6px; 
 }
 
-.normalattackicon{
+.skillicons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 45%;
+  width: 10%;
+  margin-left: 2.5%;
+  padding: 10px;
+  top: 10%;
+  position: relative;
+  z-index: 0;
+}
+
+.skillicons img{
   display: block;
   position: relative;
-  width: 5vw;
-  height: 13vh;
+  width: 50%;
   padding: 0;
   margin: 0;
-  top: 10%;
+}
+
+.dash{
+  z-index: 2;
+  cursor: pointer;
 }
 
 .spacer{
