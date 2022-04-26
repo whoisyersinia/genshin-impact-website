@@ -488,9 +488,22 @@ section{
   margin: 0;
 }
 
-.dash{
-  z-index: 2;
-  cursor: pointer;
+.videodemo{
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 27%;
+  left: 25%;
+  padding: 10vw 10vh;
+}
+
+.normalattackvid{
+  width: 42vw;
+  height: 45vh;
+  z-index: 1;
 }
 
 .spacer{
