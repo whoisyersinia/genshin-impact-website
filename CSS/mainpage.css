@@ -383,8 +383,8 @@ section{
 /* 2nd Section */
 #charactershowcase{
   width: 100%;
-  z-index: -1;
   overflow: hidden;
+  z-index: 0;
 }
 
 .showcase{
@@ -392,7 +392,6 @@ section{
   position: absolute;
   overflow: hidden;
   height: 100%;
-  z-index: -1;
 }
 
 .showcase h2{
@@ -401,7 +400,6 @@ section{
   font-weight: 700;
   margin-top: 8%;
   margin-left: 5%;
-  z-index: 1;
 }
 
 .subtitle{
@@ -413,23 +411,13 @@ section{
   position: absolute;
   font-weight: 700;
   margin-left: 5%;
-  bottom: 50%;
-
-}
-
-.ayakaheading{
-  position: absolute;
-  font-weight: 700;
-  margin-left: 5%;
-  bottom: 65%;
-  margin-bottom: 1%;
+  bottom: 50%;  
 }
 
 .showcase h4{
   color: #2cbcc9;
   font-family: 'HYWenHei-85W';
   font-size: 1em;
-  z-index: 0;
 }
 
 .cryoshowcase{
@@ -449,16 +437,15 @@ section{
   display: flex;
   width: 50%;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   left: 68%;
   top: 50%;
-  cursor: pointer;
 }
 
 .ayakainfo{
   color: #fff;
   position: absolute;
-  bottom: 55%;
+  bottom: 60%;
   right: 49.95%;
   margin: 0 0 0 10px;
   width: 45%;
@@ -477,7 +464,6 @@ section{
   padding: 10px;
   top: 10%;
   position: relative;
-  z-index: 0;
 }
 
 .skillicons img{
@@ -486,7 +472,10 @@ section{
   width: 50%;
   padding: 0;
   margin: 0;
+  z-index: 1;
+  cursor: pointer;
 }
+
 
 .videodemo{
   width: 30%;
@@ -495,7 +484,7 @@ section{
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 27%;
+  bottom: 29.5%;
   left: 25%;
   padding: 10vw 10vh;
 }
