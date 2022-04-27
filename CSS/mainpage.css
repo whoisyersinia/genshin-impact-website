@@ -489,7 +489,8 @@ section{
   padding: 10vw 10vh;
 }
 
-.normalattackvid{
+.videodemo video{
+  display: none;
   width: 42vw;
   height: 45vh;
   z-index: 1;

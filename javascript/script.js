@@ -33,12 +33,12 @@ window.addEventListener("scroll", reveal);
 
 const inazuma = document.getElementById('inazuma');
 
-    let div = document.getElementById('text_install')
+    const text_install = document.getElementById('text_install')
         inazuma.onclick = function(e){
-            if (div.style.display !== 'none' && e.target.id !== 'inazuma') {
-            div.style.display = 'none';
+            if (text_install.style.display !== 'none' && e.target.id !== 'inazuma') {
+            text_install.style.display = 'none';
         } else {
-            div.style.display = 'block'
+            text_install.style.display = 'block'
             inazuma.style.display = 'none'
         }
     }
@@ -66,3 +66,68 @@ arrow.onclick = function(e){
 
         }
 
+
+const normalattack = document.getElementById('normalattack');
+const dash = document.getElementById('dash');
+const elementalskill = document.getElementById('elementalskill');
+const elementalburst = document.getElementById('elementalburst');
+
+const normalattackvid = document.getElementById('normalattackvid');
+const dashvid = document.getElementById('dashvid');
+const elementalskillvid = document.getElementById('elementalskillvid');
+const elementalburstvid = document.getElementById('elementalburstvid');
+
+normalatackonclick();
+function normalatackonclick() {
+    normalattack.onclick = function (e) {
+        if (normalattackvid.style.display !== 'none' && e.target.id !== 'normalattack') {
+            normalattackvid.style.display = 'none';
+        } else {
+            normalattackvid.style.display = 'block';
+            dashvid.style.display = 'none';
+            elementalskillvid.style.display = 'none';
+            elementalburstvid.style.display = 'none';
+        }
+    };
+}
+
+dashonclick();
+function dashonclick() {
+    dash.onclick = function (e) {
+        if (dashvid.style.display !== 'none' && e.target.id !== 'dash') {
+            dashvid.style.display = 'none';
+        } else {
+            normalattackvid.style.display = 'none';
+            dashvid.style.display = 'block';
+            elementalskillvid.style.display = 'none';
+            elementalburstvid.style.display = 'none';
+        }
+    };
+}
+
+elementalskillonclick();
+function elementalskillonclick() {
+    elementalskill.onclick = function (e) {
+        if (elementalskillvid.style.display !== 'none' && e.target.id !== 'elementalskill') {
+            elementalskillvid.style.display = 'none';
+        } else {
+            normalattackvid.style.display = 'none';
+            dashvid.style.display = 'none';
+            elementalskillvid.style.display = 'block';
+            elementalburstvid.style.display = 'none';
+        }
+    };
+}
+elementalburstonclick();
+function elementalburstonclick() {
+    elementalburst.onclick = function (e) {
+        if (elementalburstvid.style.display !== 'none' && e.target.id !== 'elementalburst') {
+            elementalburstvid.style.display = 'none';
+        } else {
+            normalattackvid.style.display = 'none';
+            dashvid.style.display = 'none';
+            elementalskillvid.style.display = 'none';
+            elementalburstvid.style.display = 'block';
+        }
+    };
+}
