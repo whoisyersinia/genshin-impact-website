@@ -494,6 +494,7 @@ section{
   width: 42vw;
   height: 45vh;
   z-index: 1;
+  position: absolute;
 }
 
 .spacer{

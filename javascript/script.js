@@ -96,13 +96,22 @@ function dashonclick() {
     dash.onclick = function (e) {
         if (dashvid.style.display !== 'none' && e.target.id !== 'dash') {
             dashvid.style.display = 'none';
+            
         } else {
             normalattackvid.style.display = 'none';
             dashvid.style.display = 'block';
             elementalskillvid.style.display = 'none';
             elementalburstvid.style.display = 'none';
+
+            startVid();
         }
     };
+
+    function startVid() {
+        dashvid.addEventListener('loadedmetadata', function() {
+            this.currentTime = 5;
+          }, false);          
+    }
 }
 
 elementalskillonclick();
