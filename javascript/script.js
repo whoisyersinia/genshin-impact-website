@@ -127,6 +127,7 @@ function elementalskillonclick() {
         }
     };
 }
+
 elementalburstonclick();
 function elementalburstonclick() {
     elementalburst.onclick = function (e) {
