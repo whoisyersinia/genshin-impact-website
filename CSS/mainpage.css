@@ -225,6 +225,9 @@ header{
   left: 10vh;
 }
 
+.bg-text button:focus{
+  font-weight: bold;
+}
 
 header a:link, a:visited, a:hover, a:active {
   color: #fff;
@@ -360,6 +363,9 @@ section{
   border-radius: 20px;
   left: 10vh;
 }
+.buttonBx button:focus{
+  font-weight: bold;
+}
 
 .imgBx{
   grid-area: image;
@@ -488,6 +494,11 @@ section{
   opacity: 1; 
 }
 
+.skillicons img:focus{
+  transform: scale(1.05);
+  opacity: 1; 
+}
+
 .videodemo{
   width: 30%;
   height: 30%;
@@ -558,6 +569,12 @@ section{
 }
 
 #inazuma img:hover{
+  opacity: 1;
+  max-width: 11.5em;
+  max-height: 11.5em;
+}
+
+#inazuma img:focus{
   opacity: 1;
   max-width: 11.5em;
   max-height: 11.5em;
@@ -711,6 +728,11 @@ footer{
 .arrow_icon:hover{
   scale: 1.1;
 }
+
+.arrow_icon:focus{
+  scale: 1.1;
+}
+
 /*  Animation */
 
 reveal {
@@ -814,7 +836,7 @@ reveal {
   }
   .logo{
     position: relative;
-    left: 75%;
+    left: 85%;
   }
   #bg-video{
     width: 200vw;
@@ -822,6 +844,14 @@ reveal {
   }
   .bg-text{
     text-align: center;
+  }
+
+  .bg-text small{
+    font-size: 1em;
+  }
+
+  .bg-text h1{
+    font-size: 10em;
   }
 
   .bg-text h1{
