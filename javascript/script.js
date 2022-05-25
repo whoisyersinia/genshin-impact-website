@@ -82,11 +82,24 @@ function normalatackonclick() {
     normalattack.onclick = function (e) {
         if (normalattackvid.style.display !== 'none' && e.target.id !== 'normalattack') {
             normalattackvid.style.display = 'none';
+            normalattack.classList.toggle('grey');
+            dash.classList.remove('grey');
+            elementalskill.classList.remove('grey');
+            elementalburst.classList.remove('grey');
+
         } else {
             normalattackvid.style.display = 'block';
+            normalattack.classList.remove('grey')
+
             dashvid.style.display = 'none';
+            dash.classList.toggle('grey');
+
             elementalskillvid.style.display = 'none';
+            elementalskill.classList.toggle('grey');
+
             elementalburstvid.style.display = 'none';
+            elementalburst.classList.toggle('grey');
+
         }
     };
 }
@@ -96,12 +109,23 @@ function dashonclick() {
     dash.onclick = function (e) {
         if (dashvid.style.display !== 'none' && e.target.id !== 'dash') {
             dashvid.style.display = 'none';
+            dash.classList.toggle('grey');
+            normalattack.classList.remove('grey')
+            elementalskill.classList.remove('grey');
+            elementalburst.classList.remove('grey');
             
         } else {
             normalattackvid.style.display = 'none';
+            normalattack.classList.toggle('grey');
+
             dashvid.style.display = 'block';
+            dash.classList.remove('grey');
+
             elementalskillvid.style.display = 'none';
+            elementalskill.classList.toggle('grey');
+
             elementalburstvid.style.display = 'none';
+            elementalburst.classList.toggle('grey')
 
             startVid();
         }
@@ -119,12 +143,26 @@ function elementalskillonclick() {
     elementalskill.onclick = function (e) {
         if (elementalskillvid.style.display !== 'none' && e.target.id !== 'elementalskill') {
             elementalskillvid.style.display = 'none';
+            elementalskill.classList.toggle('grey');
+            normalattack.classList.remove('grey')
+            dash.classList.remove('grey');
+            elementalburst.classList.remove('grey');
+
         } else {
             normalattackvid.style.display = 'none';
+            normalattack.classList.toggle('grey');
+
             dashvid.style.display = 'none';
+            dash.classList.toggle('grey');
+
             elementalskillvid.style.display = 'block';
+            elementalskill.classList.remove('grey');
+
             elementalburstvid.style.display = 'none';
+            elementalburst.classList.toggle('grey');
+
         }
+
     };
 }
 
@@ -133,11 +171,26 @@ function elementalburstonclick() {
     elementalburst.onclick = function (e) {
         if (elementalburstvid.style.display !== 'none' && e.target.id !== 'elementalburst') {
             elementalburstvid.style.display = 'none';
+            elementalburst.classList.toggle('grey');
+            normalattack.classList.remove('grey')
+            dash.classList.remove('grey');
+            elementalskill.classList.remove('grey');
+
         } else {
             normalattackvid.style.display = 'none';
+            normalattack.classList.toggle('grey');
+
             dashvid.style.display = 'none';
+            dash.classList.toggle('grey');
+
             elementalskillvid.style.display = 'none';
+            elementalskill.classList.toggle('grey')
+
             elementalburstvid.style.display = 'block';
+            elementalburst.classList.remove('grey');
+
         }
     };
 }
+
+ 

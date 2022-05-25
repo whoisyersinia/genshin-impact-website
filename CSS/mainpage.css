@@ -499,6 +499,34 @@ section{
   opacity: 1; 
 }
 
+#normalattack.grey{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  scale: 0.9;
+}
+
+#dash.grey{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  scale: 0.9;
+}
+
+#elementalskill.grey{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  scale: 0.9;
+}
+
+#elementalburst.grey{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  scale: 0.9;
+}
+
 .videodemo{
   width: 30%;
   height: 30%;
@@ -752,6 +780,9 @@ reveal {
 .active.fade-right {
   animation: fade-right 1s ease;
 }
+.active.fade-video{
+  animation: fade-video 0.3s ease;
+}
 .arrow_icon.active{
   animation: arrow 1s linear;
 }
@@ -786,6 +817,17 @@ reveal {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-video {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
