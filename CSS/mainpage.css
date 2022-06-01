@@ -86,21 +86,20 @@ header{
 
 .logo {
   display: flex;
-  width: 120px;
-  height: 60px;
   align-items: center;
   justify-content: center;
-  fill: #fbfcfd;
   padding: 5px;
-  margin-left: 15px;
+  margin-left: 20px;
   cursor: pointer;
-  
-
+  overflow: hidden;
+  opacity: 0.7;
 }
 
 .logo:hover{
-  fill: #02a6ec;
+  opacity: 1;
+  scale: 1.2;
 }
+
 
 #toggle{
   position: absolute;
