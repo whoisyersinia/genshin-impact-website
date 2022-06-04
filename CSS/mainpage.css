@@ -70,6 +70,12 @@ header{
   justify-content: space-between;
 }
 
+.textlogocontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .text_logo{
   color: #fff;
   display: flex;
