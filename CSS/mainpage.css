@@ -577,6 +577,16 @@ section{
   z-index: -1;
 }
 
+.form{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 0;
+
+}
+
 .citiesimg{
   position: relative;
   background-color: #000;
@@ -656,6 +666,10 @@ section{
   display: inline-flex;
   max-width: 18em;
   margin-bottom: 2em;
+}
+
+.pyro{
+  z-index: 1;
 }
 
 .credits{

@@ -83,13 +83,11 @@ function normalatackonclick() {
         if (normalattackvid.style.display !== 'none' && e.target.id !== 'normalattack') {
             normalattackvid.style.display = 'none';
             normalattack.classList.toggle('grey');
-            dash.classList.remove('grey');
-            elementalskill.classList.remove('grey');
-            elementalburst.classList.remove('grey');
+
 
         } else {
             normalattackvid.style.display = 'block';
-            normalattack.classList.remove('grey')
+            normalattack.classList.remove('grey');
 
             dashvid.style.display = 'none';
             dash.classList.toggle('grey');
@@ -109,10 +107,7 @@ function dashonclick() {
     dash.onclick = function (e) {
         if (dashvid.style.display !== 'none' && e.target.id !== 'dash') {
             dashvid.style.display = 'none';
-            dash.classList.toggle('grey');
-            normalattack.classList.remove('grey')
-            elementalskill.classList.remove('grey');
-            elementalburst.classList.remove('grey');
+            dash.classList.toggle('grey');         
             
         } else {
             normalattackvid.style.display = 'none';
@@ -125,7 +120,7 @@ function dashonclick() {
             elementalskill.classList.toggle('grey');
 
             elementalburstvid.style.display = 'none';
-            elementalburst.classList.toggle('grey')
+            elementalburst.classList.toggle('grey');
 
             startVid();
         }
@@ -144,9 +139,6 @@ function elementalskillonclick() {
         if (elementalskillvid.style.display !== 'none' && e.target.id !== 'elementalskill') {
             elementalskillvid.style.display = 'none';
             elementalskill.classList.toggle('grey');
-            normalattack.classList.remove('grey')
-            dash.classList.remove('grey');
-            elementalburst.classList.remove('grey');
 
         } else {
             normalattackvid.style.display = 'none';
@@ -172,9 +164,6 @@ function elementalburstonclick() {
         if (elementalburstvid.style.display !== 'none' && e.target.id !== 'elementalburst') {
             elementalburstvid.style.display = 'none';
             elementalburst.classList.toggle('grey');
-            normalattack.classList.remove('grey')
-            dash.classList.remove('grey');
-            elementalskill.classList.remove('grey');
 
         } else {
             normalattackvid.style.display = 'none';
