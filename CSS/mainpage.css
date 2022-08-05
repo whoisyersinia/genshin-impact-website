@@ -66,9 +66,6 @@ header{
 
 .logo_container{
   display: flex;
-  width: 120px;
-  height: 60px;
-  margin-left: 15px;
   align-items: center;
   justify-content: space-between;
 }
