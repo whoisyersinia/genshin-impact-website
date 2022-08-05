@@ -9,4 +9,8 @@ This project is an accmulation of multiple sleepless nights and looking up on St
 This project helped me understand programming languages such as Javascript. 
 Feel free to look around the files provided and hopefully you find inspiration for designing your own website.
 
-Last edit on May 2022.
+
+Lol i hate u guys!
+
+August 2022
+
